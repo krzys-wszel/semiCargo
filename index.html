@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8859-2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SemiCargo</title>
+</head>
+
+<style>
+    body {
+        max-width: 1000px;
+    }
+
+    header {
+        height: 100px;
+        width: 100%;
+        background: #ffffff;
+        text-align: center;
+    }
+
+    .logo {
+        position: relative;
+        top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .bg img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .banner {
+        position: relative;
+    }
+
+    .box {
+        position: absolute;
+        top: 26%;
+        left: 67%;
+    }
+
+    .cars_foto {
+        text-align: center;
+        margin: 75px 0px 75px 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #cars .text p {
+        font-size: 17px;
+        font-family: "Roboto";
+        line-height: 1.2;
+        margin-left: 91.039px;
+        margin-top: 58px;
+        width: 439px;
+        height: 39px;
+        z-index: 58;
+    }
+
+    #cars .text span {
+        font-weight: bold;
+    }
+
+    .map img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+    }
+
+    footer p {
+        font-size: 12px;
+        font-family: "Roboto";
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    footer span {
+        font-weight: bold;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .number_1,
+    .number_2,
+    .number_3 {
+        position: absolute;
+        margin-top: -25px;
+        z-index: -1;
+        margin-left: -25px;
+        max-width: 30%;
+    }
+
+
+    .box_1,
+    .box_2,
+    .box_3 {
+        text-align: left;
+    }
+
+    .box_1 p,
+    .box_2 p,
+    .box_3 p {
+        margin-left: 20px;
+    }
+
+    .cars_foto p {
+        font-size: 18px;
+        font-family: "Roboto";
+        line-height: 1.2;
+    }
+
+    .overlay {
+        background: #08b8e1;
+        margin: 0px 20px;
+        height: 184px;
+    }
+
+    .plus {
+        position: absolute;
+        /* left: 50%; */
+        /* top: 50%; */
+        transform: translateX(-50% -50%);
+        margin-left: 83px;
+        margin-top: 60px;
+        background: white;
+        padding: 20px;
+        border-radius: 50%;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .box_1:hover .plus,
+    .box_2:hover .plus,
+    .box_3:hover .plus {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .box_1:hover .car1,
+    .box_2:hover .car2,
+    .box_3:hover .car3 {
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+    @media only screen and (max-width: 767px) {
+        .box img {
+            width: 100%;
+        }
+
+        #cars .text p {
+            font-size: 15px;
+            font-family: "Roboto";
+            margin-left: 20.039px;
+            margin-top: 75px;
+            max-width: 100%;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <img src="img/logo_top.jpg" alt="" class="logo">
+    </header>
+
+    <section class="banner">
+        <div class="bg">
+            <img src="img/bg.jpg" alt="">
+
+        </div>
+        <div class="box">
+            <img src="img/box.jpg" alt="">
+        </div>
+    </section>
+
+
+    <section id="cars">
+        <div class="text">
+
+            <p><span>Do stałej, stabilnej współpracy</span> w transporcie krajowym jak i międzynarodowym poszukujemy:
+            </p>
+        </div>
+        <div class="cars_foto">
+
+            <div class="box_1"">
+    <img src=" img/plus.jpg" alt="" class="plus">
+                <img src="img/1.jpg" alt="" class="number_1">
+                <div class="overlay">
+
+                    <img src="img/car1.jpg" alt="" class="car1">
+                </div>
+
+                <p>Firanka 13,6 <br>transport krajowy</p>
+            </div>
+
+            <div class="box_2">
+                <img src="img/plus.jpg" alt="" class="plus">
+                <img src="img/2.jpg" alt="" class="number_2">
+                <div class="overlay">
+                    <img src="img/car2.jpg" alt="" class="car2">
+                </div>
+                <p>Firanka 13,6 transport<br>międzynarodowy</p>
+            </div>
+
+            <div class="box_3">
+                <img src="img/plus.jpg" alt="" class="plus">
+                <img src="img/3.jpg" alt="" class="number_3">
+                <div class="overlay">
+                    <img src="img/car3.jpg" alt="" class="car3">
+                </div>
+                <p>Busy do 3,5T DMC<br>transport<br>międzynarodowy</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="map">
+            <img src="img/mapka.jpg" alt="">
+        </div>
+    </section>
+
+
+    <footer>
+        <p><span>SemiCargo</span> Karol Pściuk • Kaczki Średnie 19A, 62-700 Turek • <a href="http://www.semicargo.pl/"
+                target="_blank"> www.semicargo.pl</a></p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
